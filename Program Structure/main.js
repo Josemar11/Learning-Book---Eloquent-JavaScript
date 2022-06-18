@@ -3,15 +3,6 @@ luigisDebt = luigisDebt - 35;
 console.log(luigisDebt);
 // → 105
 
-let one = 1, two = 2;
-console.log(one + two);
-// → 3
-
-var nombre = "Ayda";
-const greeting = "Hello ";
-console.log(greeting + nombre);
-// → Hello Ayda
-
 prompt("Enter passcode");
 
 console.log(Math.max(2, 4));
@@ -19,13 +10,41 @@ console.log(Math.max(2, 4));
 console.log(Math.min(2, 4) + 100);
 // → 102
 
-let theNumber = Number(prompt("Pick a number"));
-console.log("Your number is the square root of " + theNumber * theNumber);
 
-let xNumber = Number(prompt("Pick a number"));
-if (!Number.isNaN(youNumber)) {
-  console.log("Your number is the square root of " + xNumber * xNumber);
+if (1 + 1 == 2) console.log("It's true");
+// → It's true
+
+let theNumber = Number(prompt("Pick a number"));
+if (!Number.isNaN(theNumber)) {
+  console.log("Your number is the square root of " + theNumber * theNumber);
+} else {
+  console.log("Hey. Why didn't you give me a number?");
 }
 
+let num = Number(prompt("Pick a number"));
 
+if (num < 10) {
+  console.log("Small");
+} else if (num < 100) {
+  console.log("Medium");
+} else {
+  console.log("Large");
+}
 
+let number = 0;
+while (number <= 12) {
+  console.log(number);
+  number = number + 2;
+}
+// → 0
+// → 2
+//   … etcetera
+
+let result = 1;
+let counter = 0;
+while (counter < 10) {
+  result = result * 2;
+  counter = counter + 1;
+}
+console.log(result);
+// → 1024
