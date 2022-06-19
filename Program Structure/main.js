@@ -3,14 +3,6 @@ luigisDebt = luigisDebt - 35;
 console.log(luigisDebt);
 // → 105
 
-prompt("Enter passcode");
-
-console.log(Math.max(2, 4));
-// → 4
-console.log(Math.min(2, 4) + 100);
-// → 102
-
-
 if (1 + 1 == 2) console.log("It's true");
 // → It's true
 
@@ -48,3 +40,16 @@ while (counter < 10) {
 }
 console.log(result);
 // → 1024
+
+let yourName;
+do {
+  yourName = prompt("Who are you?");
+} while (!yourName);
+console.log(yourName);
+
+if (false != true) {
+  console.log("That makes sense.");
+  if (1 < 2) {
+    console.log("No surprise there.");
+  }
+}
