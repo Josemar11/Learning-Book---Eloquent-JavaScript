@@ -43,3 +43,16 @@ console.log(halve(100));
 // → 50
 console.log(n);
 // → 10
+
+let launchMissiles = function() {
+  missileSystem.launch("now");
+};
+if (safeMode) {
+  launchMissiles = function() {/* do nothing */};
+}
+
+console.log("The future says:", future());
+
+function future() {
+  return "You'll never have flying cars";
+}
